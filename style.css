@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Raleway:wght@500;600&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Poppins&family=Raleway:wght@500;600&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Montserrat:wght@800&display=swap');
+  
+
+*{
+    margin: 0%;
+    padding: 0%
+}
+
+*::before,
+*::after{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('gradient2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+nav{
+    flex: 1;
+    padding-left: 30%;
+}
+
+nav a:hover{
+ 
+    color: #070e13;
+}
+
+nav a::after{
+    content: "";
+    display: block;
+    background-color:#000;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    border-radius: 24.5%;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+a:hover::after{
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+
+.content{
+    margin-left: 2%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content h1{
+    font-size: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: Raleway;
+    font-weight: 1300;
+
+}
+
+.content p{
+    font-size: 30px;
+    margin-left: 90px;
+    font-family: Bitter;
+    font-weight: 500;
+}
+
+.logo img{
+    width: 130px;
+    margin-left: 17%;
+    padding-top: 0%;
+    
+}
+
+.medicine{
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+.btn .login:hover{
+    background-color: #fff;
+    color: #162938;
+
+}
+
+.btn .signup:hover{
+    background-color: #fff;
+    color: #162938;
+
+}
+
+.signup{
+    width: 160px;
+    height: 50px;
+    margin-top: 45px;
+    margin-right: 20px;
+    border-radius: 45px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.login{
+    width: 160px;
+    height: 50px;
+    margin-top: 45px;
+    border-radius: 45px;
+    font-family: Poppins;
+    font-weight: bold;
+
+}
+
+.page2{
+    height: 100vh;
+    background-image: url('gradient.jpg');
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+.page2 h1{
+    position:absolute;
+    font-size: x-large;
+    font-family: Poppins;
+    margin-top: 7%;
+    margin-left: 68%;
+}
+ 
+.page2 img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 14%;
+
+}
+
+.abtus{
+    width: 26%;
+    margin-left: 10%;
+}
+
+.whte_grad{
+    width: 40%;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 0%;
+}
+
+
+.page2 p{
+    position:absolute;
+    flex-direction: column;
+    font-size: medium;
+    font-family: Poppins;
+    margin-top: 15%;
+    margin-left: 68%;
+}
+
+.card-container {
+	display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card {
+    position: relative;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px #222;
+    margin: 32px;
+    background-color: #000;
+    transition: all 0.2s;
+}
+  
+.card:hover {
+	width: 84vw;
+    height: 52vh;
+}  
+  
+.img-card {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+}
+  
+.card-menstru {
+    border-radius: 30px;
+    opacity: 0.3;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	background-image: url("https://source.unsplash.com/820x340/?Menstruation");
+    background-size: cover;
+}
+  
+.card-fitness {
+	border-radius: 30px;
+    opacity: 0.3;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	background-image: url("https://source.unsplash.com/820x340/?fitness");
+    background-size: cover;
+}
+
+.card-mentalhealth {
+	border-radius: 30px;
+    opacity: 0.3;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	background-image: url("https://source.unsplash.com/820x340/?mentalhealth");
+    background-size: cover;
+}
+  
+.img-card h2 {
+	font-family: 'Montserrat';
+	font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+  
+.img-card p {
+	color: #fff;
+    font-family: 'Baloo 2';
+    font-size: 22px;
+    text-align: center;
+    margin: 16px;
+    margin-top: 6px;
+}
+  
+.img-card a {
+	background-color: #35d;
+    margin: 16px;
+    padding: 6px 12px; 
+	color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.img-card a:hover {
+	background-color: #bbb;
+    color: #35d;
+}
+
+
+
+
+
