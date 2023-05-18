@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fitness.css">
-    <title>Html And CSS Video Gallery</title>
+    <title>Playlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .section {
+            width: 80vw;
+            height: 95vh;
+            margin: auto;
+            border: 1px solid rgb(181, 181, 181);
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            overflow-y: scroll;
+            box-shadow: inset 0px -10px 30px rgba(184, 184, 184, 0.613);
+        }
+
+        video {
+            background-color: rgb(153, 153, 153);
+            height: 20vh;
+            width: 50vh;
+        }
+
+        .video {
+            display: flex;
+            margin: 15px auto;
+            width: 90%;
+            height: fit-content;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        .summary {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .video {
+                flex-direction: column;
+            }
+
+            video {
+                width: 80vw;
+                height: 20vh;
+            }
+
+            .section {
+                width: 90vw;
+            }
+        }
+    </style>
 </head>
-<body oncontextmenu="return false">
-    <div class="container">
-        <h1>Html And CSS Video Gallery</h1>
-        <div id="video_player">
-            <video controls poster="" class="video" id="video">
-                <source src="./media/1.m4v" type="video/mp4">
-                <source src="./media/1.m4v" type="video/mp4">
-            </video>
-            <div class="scrollBox">
-                <div class="box">
-                    <img src="./img/1.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/1.m4v" class="btn">Watch</a>
-                    </div>
+
+<body>
+    <div class="section">
+        <div class="list">
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
-                <div class="box">
-                    <img src="./img/2.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/2.m4v" class="btn">Watch</a>
-                    </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
-                <div class="box">
-                    <img src="./img/3.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/3.m4v" class="btn">Watch</a>
-                    </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
-                <div class="box">
-                    <img src="./img/4.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/4.m4v" class="btn">Watch</a>
-                    </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
-                <div class="box">
-                    <img src="./img/5.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/5.m4v"class="btn">Watch</a>
-                    </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
-                <div class="box">
-                    <img src="./img/6.png">
-                    <div class="box-content">
-                        <h3>How to create a video Gallery using Html and CSS3</h3>
-                        <a href="./media/6.m4v" class="btn">Watch</a>
-                    </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
+                </div>
+            </div>
+            <div class="video">
+                <video src=""></video>
+                <div class="summary">
+                    <h4 class="title">Lorem, ipsum dolor.</h4>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, esse.</p>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- ###########################javascript for vidoe Player################ -->
-
-    <script type="text/javascript">
-        let anchors = document.querySelectorAll('div .btn');
-    let links = [...anchors];
-    
-    for (let i=0; i<links.length; i++) {
-        links[i].onclick = handler;
-    }
-    function handler(e) {
-        e.preventDefault();
-        let videotarget = this.getAttribute("href");
-        let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
-        let video = document.getElementById("video");
-        video.removeAttribute("poster");
-        let source = document.querySelectorAll("#video_player video source");
-        source[0].src = filename + ".mp4";
-        source[1].src = filename + ".m4v";
-        video.load();
-        video.play();
-    }
-    </script>
+        </section>
 </body>
+
 </html>
