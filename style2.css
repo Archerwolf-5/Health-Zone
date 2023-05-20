@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Poppins&family=Raleway:wght@500;600&family=Roboto+Slab:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 
 *{
@@ -317,6 +319,15 @@
 }
 .suscribe{
     margin-left: 15%;
+  
+}
+
+.suscribe .title{
+    font-family: 'montserrat';
+}
+
+.suscribe p{
+    font-family: 'Nunito';
 }
 
 .suscribe h4{
